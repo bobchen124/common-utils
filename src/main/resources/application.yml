@@ -1,0 +1,9 @@
+server:
+  port: 8061
+spring:
+  profiles:
+    active: dev
+spring:
+  redis:
+    host: localhost
+    port: 6379
