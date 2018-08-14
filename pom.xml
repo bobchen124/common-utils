@@ -7,6 +7,13 @@
     <groupId>com.cpn.common</groupId>
     <artifactId>common-utils</artifactId>
     <version>1.0-SNAPSHOT</version>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.7.RELEASE</version>
+		<relativePath/>
+	</parent>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,6 +36,30 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.13.Final</version>
         </dependency>
-    </dependencies>
+    
+        <!-- https://mvnrepository.com/artifact/com.alibaba.rocketmq/rocketmq-client -->
+        <dependency>
+            <groupId>com.alibaba.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+            <version>3.6.2.Final</version>
+        </dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.35</version>
+		</dependency>
+		
+	</dependencies>
     
 </project>
