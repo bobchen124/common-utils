@@ -10,3 +10,5 @@ spring:
 spring:
   rocketmq:
     nameServer: 127.0.0.1:9876
+logging:
+  file: classpath:logback.xml

@@ -8,7 +8,6 @@ import com.alibaba.rocketmq.common.message.Message;
 import com.alibaba.rocketmq.remoting.exception.RemotingException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -18,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
  * @since v1.0.0
  */
 @Configuration
-@ConditionalOnProperty(prefix = "spring.rocketmq", value = { "nameServer" })
+//@ConditionalOnProperty(prefix = "spring.rocketmq", value = { "nameServer" })
 public class Producer implements InitializingBean {
 
     public Producer() {

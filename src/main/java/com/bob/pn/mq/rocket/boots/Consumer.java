@@ -8,7 +8,6 @@ import com.alibaba.rocketmq.common.message.MessageExt;
 import com.alibaba.rocketmq.remoting.common.RemotingHelper;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.UnsupportedEncodingException;
@@ -21,7 +20,7 @@ import java.util.List;
  * @since v1.0.0
  */
 @Configuration
-@ConditionalOnProperty(prefix = "spring.rocketmq", value = { "nameServer" })
+//@ConditionalOnProperty(prefix = "spring.rocketmq", value = { "nameServer" })
 public class Consumer implements InitializingBean {
 
     private DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("my-consumer-group");
