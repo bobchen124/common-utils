@@ -1,6 +1,5 @@
 package com.bob.pn.schedule;
 
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ScheduledDemo3 {
 
-    @Scheduled(fixedRate = 50000)
+    //@Scheduled(fixedRate = 50000)
     public void demo() {
         System.out.println("ScheduledDemo1 demo3");
         System.out.println(Integer.valueOf("abcddd"));

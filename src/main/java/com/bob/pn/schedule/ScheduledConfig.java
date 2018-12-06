@@ -1,7 +1,6 @@
 package com.bob.pn.schedule;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @author chenbo@guworks.cc
@@ -10,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @since v1.0.0
  */
 @Configuration
-@EnableScheduling
+//@EnableScheduling
 public class ScheduledConfig {
 
 }
